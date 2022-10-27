@@ -1,7 +1,7 @@
 import React from 'react'
-import { FeedbackCard } from './FeedbackCard'
 import styles from '../style'
 import { feedback } from '../constants'
+import FeedbackCard  from './FeedbackCard'
 
 const Testimonials = () => {
   return (
@@ -13,10 +13,10 @@ const Testimonials = () => {
       <div className='w-full flex justify-between items-center
       md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]'>
         <h1 className={`${styles.heading2}`}>What people are
-        <br className='sm:block hidden'/> sayind about us</h1>
+        <br className='sm:block hidden'/> saying about us</h1>
           <div className='w-full md:mt-0 mt-6'>
             <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-              Everythind you need to accept card payments and grow your 
+              Everything you need to accept card payments and grow your 
               business any where on the planet.
             </p>
           </div>
@@ -27,9 +27,7 @@ const Testimonials = () => {
         {feedback.map((card) => (
             <FeedbackCard key={card.id} {...card} />
         ))} 
-
       </div>
-
     </section>
   )
 }
