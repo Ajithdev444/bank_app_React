@@ -20,7 +20,6 @@ const FeedbackCard = ({ content, title, name, img }) => {
        text-[16px] leading-[24px]'>{title}</p>
         </div>
        </div>
-
     </div>
   )
 }
